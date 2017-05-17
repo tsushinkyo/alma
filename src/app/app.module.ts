@@ -4,14 +4,16 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MdButtonModule, MdCheckboxModule} from '@angular/material';
+import {MdButtonModule, MdCheckboxModule, MdCardModule} from '@angular/material';
 import 'hammerjs';
 
 import { AppComponent } from './app.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
@@ -19,7 +21,8 @@ import { AppComponent } from './app.component';
     HttpModule,
     BrowserAnimationsModule,
     MdButtonModule, 
-    MdCheckboxModule
+    MdCheckboxModule,
+    MdCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
