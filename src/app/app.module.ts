@@ -12,6 +12,8 @@ import 'hammerjs';
 import { AppComponent } from './app.component';
 // My modules
 import { NavigationModule } from './modules/navigation/navigation.module';
+import { HeroModule } from './modules/hero/hero.module';
+import { AboutModule } from './modules/about/about.module';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { NavigationModule } from './modules/navigation/navigation.module';
     MdButtonModule, 
     MdCheckboxModule,
     MdCardModule,
-    NavigationModule
+    NavigationModule,
+    HeroModule,
+    AboutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
